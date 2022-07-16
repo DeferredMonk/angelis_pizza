@@ -1,0 +1,235 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.osote p{
+  margin: 4.438px;
+}
+.aukioloajat h3, .osote h3{
+  margin: 0;
+}
+.aukioloajat, .osote{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.logolle {
+  padding-left: 0%;
+  padding-bottom: 18px;
+  margin:0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header{
+  background: rgba(105, 105, 105, 0.075);
+}
+.kielet{
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+}
+.kielet li{
+  padding-left: 1%;
+  list-style: none;
+}
+.logo{
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+}
+.lyhyttä, .suosikit, .perheestä, .ravintolasta, .sijainti, .yhteystiedot{
+  margin-right: 10%;
+  margin-left: 10%;
+  box-shadow: 10px 10px 5px grey;
+}
+.punanen:hover {
+  border-bottom: 3px solid rgb(255, 103, 103);
+}
+.vihree:hover {
+  border-bottom: 3px solid rgb(73, 161, 73);
+}
+.valkoi:hover{
+  border-bottom: 3px solid white;
+}
+.pää a{
+  display: block;
+  text-decoration: none;
+  color: #555;
+}  
+.pää > li {  
+  flex-basis: 20%;  
+}
+.pää li{
+  border-bottom: 3px solid rgba(105, 105, 105, 0.075);
+  font-size: 200%;
+  white-space: nowrap;
+}
+.pää{
+  flex-wrap: wrap;
+  background-color: rgba(105, 105, 105, 0.075);
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  padding: 0%;
+  }
+#footer {
+  background: rgba(105, 105, 105, 0.075);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow:hidden;
+}  
+main h1, p{
+  margin: 4%;
+}
+main{
+  text-align: center;
+  margin: 2%;
+  min-height: 100%;
+}
+body {
+  color:#555;
+  font-family: 'Times New Roman', Times, serif;
+  flex-direction: column;
+  background: #f5f5f5;
+  background-size: cover;
+}
+.punainen {
+  color: rgb(255, 103, 103);
+  display: inline-flex;;
+}
+.vihreä {
+  color: rgb(73, 161, 73);
+  display: inline-flex;
+}
+.lista{
+  margin: 10px 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.342);  
+  border: 1px solid white;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px grey;
+}
+h1 {
+  text-shadow: 2px 2px 5px grey;
+}
+@media only screen and (max-width:421px){
+body{
+    margin-bottom: 200px;
+}
+.tausta{
+    display: none;
+}
+#sisältö{
+  text-align: center;
+}
+#footer{
+  text-align: center;
+  height: 200px;
+}
+main h1{
+  padding-top: 15%;
+  padding-bottom: 15%;
+}.kartta{
+  width:100%; height:100%; border:0px;;
+}}
+@media only screen and (min-width: 421px){
+  body{
+    margin: 0 0 100px;
+  }
+  .vl {
+    border-left: 1px solid grey;
+    height: 250px;
+    left: 50%;
+    margin-top: 20px;
+  }
+  .tausta{
+    color: rgb(170, 169, 169);
+    background: url(kuvat/tab.JPG) no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+  }
+  .lyhyttä, .suosikit, .perheestä, .ravintolasta{
+    flex-basis: 350px;
+  }
+#footer{
+  display: flex;
+  height: 100px;
+}
+.viiva{
+  display: none;
+}#sisältö{
+  display:inline-flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  flex: 1 0 auto;
+  flex-grow: 1;
+}
+#ruokalista{
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lista{
+flex-basis: 35%;
+}.kartta{
+  width:60%; height:60%; border:0px; min-width: 270px;
+}}
+@media only screen and (min-width: 1024px){
+  .vl {
+    border-left: 1px solid grey;
+    height: 250px;
+    left: 50%;
+    margin-top: 20px;
+  }  
+  .tausta{
+    color: rgb(170, 169, 169);
+    background: url(kuvat/Ponte\ delle\ catene.JPG) no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+  }
+  #sisältö{
+    display:inline-flex;
+    justify-content: center;
+  }
+  body{
+  font-size: 110%;
+  margin: 0 0 100px;
+  }
+  #footer{
+  display:flex;
+  height: 100px;
+  
+  margin-top: 20px;
+  }
+  .viiva{
+  display: none;
+  }
+  #ruokalista{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.lista{
+  flex-basis: 25%;
+}.kartta{
+  width:100%; height:100%; border:0px; min-width: 270px;
+}
+#tilaa > img {
+  width: 50px;
+  margin: auto;
+}
+#tilaa{
+  position: absolute;
+  top:2%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+}}
