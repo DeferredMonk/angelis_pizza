@@ -107,11 +107,12 @@ body {
   display: inline-flex;
 }
 .lista{
-  margin: 10px 10px 10px 10px;
-  background-color: rgba(255, 255, 255, 0.342);  
-  border: 1px solid white;
-  border-radius: 25px;
-  box-shadow: 10px 10px 5px grey;
+  margin: 3%;
+  background-color: white;
+  border: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  min-width: 350px;
 }
 h1 {
   text-shadow: 2px 2px 5px grey;
@@ -128,7 +129,7 @@ body{
 }
 #footer{
   text-align: center;
-  height: 200px;
+  flex-direction: column;
 }
 main h1{
   padding-top: 15%;
@@ -138,7 +139,7 @@ main h1{
 }}
 @media only screen and (min-width: 421px){
   body{
-    margin: 0 0 100px;
+    margin: 0;
   }
   .vl {
     border-left: 1px solid grey;
@@ -200,13 +201,11 @@ flex-basis: 35%;
   }
   body{
   font-size: 110%;
-  margin: 0 0 100px;
+  padding-bottom: 3rem;
   }
   #footer{
   display:flex;
-  height: 100px;
-  
-  margin-top: 20px;
+justify-content: space-around;
   }
   .viiva{
   display: none;
