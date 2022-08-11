@@ -38,11 +38,6 @@ header{
   text-align: center;
   font-size: xx-large;
 }
-.lyhyttä, .suosikit, .perheestä, .ravintolasta, .sijainti, .yhteystiedot{
-  margin-right: 10%;
-  margin-left: 10%;
-  box-shadow: 10px 10px 5px grey;
-}
 .punanen:hover {
   border-bottom: 3px solid rgb(255, 103, 103);
 }
@@ -78,8 +73,6 @@ header{
 #footer {
   background: rgba(105, 105, 105, 0.075);
   position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   overflow:hidden;
 }  
@@ -115,7 +108,7 @@ body {
   min-width: 350px;
 }
 h1 {
-  text-shadow: 2px 2px 5px grey;
+  text-shadow: 1px 1px 1px gray;
 }
 @media only screen and (max-width:421px){
 body{
@@ -123,9 +116,6 @@ body{
 }
 .tausta{
     display: none;
-}
-#sisältö{
-  text-align: center;
 }
 #footer{
   text-align: center;
@@ -144,7 +134,6 @@ main h1{
   .vl {
     border-left: 1px solid grey;
     height: 250px;
-    left: 50%;
     margin-top: 20px;
   }
   .tausta{
@@ -164,11 +153,10 @@ main h1{
 .viiva{
   display: none;
 }#sisältö{
-  display:inline-flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  flex: 1 0 auto;
-  flex-grow: 1;
+  display:flex;
+  justify-content: space-evenly;
+  margin: 5% auto;
+  max-width: 1300px;
 }
 #ruokalista{
   margin-top: 5%;
@@ -182,11 +170,12 @@ flex-basis: 35%;
   width:60%; height:60%; border:0px; min-width: 270px;
 }}
 @media only screen and (min-width: 1024px){
+  .yhteystiedot, .sijainti {
+    width: 500px;
+  }
   .vl {
-    border-left: 1px solid grey;
-    height: 250px;
-    left: 50%;
-    margin-top: 20px;
+    border: 1px solid gray;
+    height: 300px;
   }  
   .tausta{
     color: rgb(170, 169, 169);
@@ -194,10 +183,6 @@ flex-basis: 35%;
     width: 100%;
     height: 300px;
     background-size: 100%;
-  }
-  #sisältö{
-    display:inline-flex;
-    justify-content: center;
   }
   body{
   font-size: 110%;
@@ -211,15 +196,19 @@ justify-content: space-around;
   display: none;
   }
   #ruokalista{
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1300px;
+  margin: 60px auto;
   }
 .lista{
   flex-basis: 25%;
 }.kartta{
-  width:100%; height:100%; border:0px; min-width: 270px;
+  width:100%; 
+  height:100%; 
+  border:0px; 
+  min-width: 270px;
 }
 #tilaa > img {
   width: 50px;
